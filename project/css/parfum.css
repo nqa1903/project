@@ -1,0 +1,43 @@
+#shopify{
+    box-sizing: border-box;
+    width: 900px;
+    height: 100%;
+    padding-top: 14.75vh;
+    margin: auto;
+}
+
+.main-product{
+    display: flex;
+}
+
+.main-product .product-slide{
+    width: 100%;
+    height: 100%;
+}
+
+.main-product .product-info{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+.main-product .product-info li{
+    padding-bottom: 1rem;
+}
+
+.main-product .product-info li > input{
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    color: white;
+}
+
+.main-product .product-info li > button{
+    background-color: inherit;
+    color: white;
+    padding: 1rem;
+    border: 1px solid white;
+}

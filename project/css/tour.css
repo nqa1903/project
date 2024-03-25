@@ -1,0 +1,88 @@
+.content-container{
+    height: 100%;
+}
+
+.tour{
+    width: 900px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14.75vh;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+}
+
+.tour a{
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 8;
+}
+
+.tour a > div{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000;
+    margin-bottom: 3rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour a .first{
+    color: #9ea2a2;
+    border: 3px solid #9ea2a2;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.tour a .first:hover{
+    color: white;
+    border: 3px solid white;
+}
+
+.tour a .first > p{
+    text-align: center;
+}
+
+.tour a .second > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+}
+
+.tour a .second{
+    position: relative;
+    border: 3px solid transparent;
+    transition: all .3s ease-in-out;
+    overflow: hidden;   
+}
+
+.tour a .second:hover{
+    border: 3px solid white;
+}
+
+.tour a .second > img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+a .second .middle{
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+a .second:hover .middle{
+    opacity: 1;
+}

@@ -1,0 +1,16 @@
+.music{
+    color: white;
+    width: 800px;
+    height: 100%;
+    padding-top: 14.75vh;
+    margin: auto;
+}
+
+.music .song-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}

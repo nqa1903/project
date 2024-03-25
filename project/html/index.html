@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css"> 
+</head>
+<body>
+    <div class="layout-container">
+        <header id="header">
+            <div class="header-container">
+                <ul class="nav-bar">
+                    <li class="header-nav"><a href="/html/tour.html">TOUR</a></li>
+                    <li class="header-nav"><a href="/html/music.html">MUSIC</a></li>
+                    <li class="header-nav"><a href="/html/parfum.html">PARFUM</a></li>
+                    <li class="header-nav"><a href="/html/cered.html">CERED</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content-container">
+            <a href="#">act i</a>
+            <a href="#">RENAISSANCE</a>
+        </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <a href="" class="right">JOIN</a>
+                <p class="center" style="color: white; width : 100% ;text-align: center;">© 2024 BEYONCÉ</p>
+                <ul class="left">
+                    <li class="footer-nav"><a href="">CREDITS</a></li>
+                    <li class="footer-nav"><a href="">TERMS</a></li>
+                    <li class="footer-nav"><a href="">PRIVACY</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="images">
+        <img src="https://cdn.sanity.io/images/fvrrd1kn/production/c57b2e4f4389c0cb9963cfe905a251b10f5e51b0-2000x3077.jpg?w=1920&q=75&fit=clip&auto=format" alt="" class="zoom">
+        <img src="https://cdn.sanity.io/images/fvrrd1kn/production/fdd652108a156e0881d1eb326feea38518eeccf8-3307x4134.jpg?w=1200&q=75&fit=clip&auto=format" alt="" class="zoom">
+        <img src="https://cdn.sanity.io/images/fvrrd1kn/production/bd6e15b21abd091b92e567bb18e39e3c52a388f3-2000x2500.jpg?w=1920&q=75&fit=clip&auto=format" alt="" class="zoom">
+        <img src="https://cdn.sanity.io/images/fvrrd1kn/production/17f32e3d3dbf8caab20c87f9d63a3edabdc4d15c-6926x6925.jpg?w=1920&q=75&fit=clip&auto=format" alt="" class="zoom">
+        <img src="https://cdn.sanity.io/images/fvrrd1kn/production/daf061f2814bb080d4189241184f20320d4f04c8-2000x1519.jpg?w=1920&q=75&fit=clip&auto=format" alt="" class="zoom">
+    </div> 
+    <script>
+    const bg = document.getElementsByClassName("zoom");
+    const windowHeight = window.innerHeight;
+    window.addEventListener("scroll", function(){
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        for (let i = 0; i < bg.length; i++) {
+            // Calculate the distance of each image from the top of the viewport
+            const imageOffset = bg[i].offsetTop;
+            // Calculate the distance of each image from the bottom of the  viewport
+            const imageFromBottom = windowHeight - (imageOffset - scrollTop);
+            // Calculate opacity based on distance from bottom
+            const opacity = Math.min(1, Math.max(0, imageFromBottom /   windowHeight));
+            // Set the opacity of the current image
+            bg[i].style.opacity = opacity;
+        }
+    });
+    </script> 
+</body>
+</html>

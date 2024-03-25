@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/cered.css" />
+  </head>
+  <body>
+    <header class="layout-container">
+      <a href="#" class="header-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 122 32"
+          fill="none"
+          class="logo"
+        >
+          <g>
+            <path
+              d="M4.46748 22.876C3.01762 22.1257 1.9119 21.0604 1.14714 19.671C0.382381 18.2847 0 16.6637 0 14.808C0 12.9524 0.385567 11.3314 1.15989 9.94504C1.93421 8.5587 3.05586 7.49039 4.53121 6.7401C6.00657 5.98981 7.77189 5.61621 9.82719 5.61621C10.6875 5.61621 11.5352 5.69649 12.37 5.86013C13.2049 6.02069 13.9537 6.26461 14.6229 6.58881V9.70421H14.5177C13.8486 9.33061 13.1252 9.04963 12.3445 8.86129C11.5638 8.67295 10.8214 8.58032 10.1172 8.58032C8.11604 8.58032 6.53871 9.11756 5.38838 10.189C4.23806 11.2604 3.6613 12.8011 3.6613 14.8111C3.6613 16.8212 4.22212 18.3341 5.34696 19.4086C6.4718 20.48 8.00769 21.0172 9.95784 21.0172C10.713 21.0172 11.481 20.903 12.2649 20.6714C13.0456 20.4429 13.7976 20.1125 14.5177 19.6895H14.6229V22.8296C13.2176 23.6139 11.567 24.0029 9.66786 24.0029C7.64762 24.0029 5.91416 23.6293 4.4643 22.879L4.46748 22.876Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M26.4843 8.88615V13.3292H34.39V16.1112H26.4843V20.7333H34.97V23.6943H23.0078V5.92513H34.97V8.88615H26.4843ZM30.4356 0H34.441L30.7255 3.72675H27.6952L30.4356 0Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M46.5417 22.876C45.0918 22.1257 43.9861 21.0604 43.2214 19.671C42.4566 18.2847 42.0742 16.6637 42.0742 14.808C42.0742 12.9524 42.4598 11.3314 43.2341 9.94504C44.0084 8.5587 45.1301 7.49039 46.6054 6.7401C48.0808 5.98981 49.8461 5.61621 51.9014 5.61621C52.7618 5.61621 53.6094 5.69649 54.4442 5.86013C55.2791 6.02069 56.0279 6.26461 56.6971 6.58881V9.70421H56.592C55.9228 9.33061 55.1994 9.04963 54.4188 8.86129C53.6381 8.67295 52.8956 8.58032 52.1914 8.58032C50.1903 8.58032 48.6129 9.11756 47.4626 10.189C46.3123 11.2604 45.7355 12.8011 45.7355 14.8111C45.7355 16.8212 46.2963 18.3341 47.4212 19.4086C48.546 20.48 50.0819 21.0172 52.0321 21.0172C52.7873 21.0172 53.5552 20.903 54.3391 20.6714C55.1198 20.4429 55.8718 20.1125 56.592 19.6895H56.6971V22.8296C55.2919 23.6139 53.6412 24.0029 51.7421 24.0029C49.7218 24.0029 47.9884 23.6293 46.5385 22.879L46.5417 22.876Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M89.6601 8.88582V13.3289H97.5658V16.1108H89.6601V20.733H98.1457V23.694H86.1836V5.9248H98.1457V8.88582H89.6601Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M117.317 7.00856C118.668 7.73106 119.697 8.76232 120.398 10.0993C121.099 11.4362 121.453 13.0047 121.453 14.8109C121.453 16.6172 121.102 18.1857 120.398 19.5226C119.694 20.8596 118.668 21.8877 117.317 22.6133C115.962 23.3358 114.347 23.6971 112.467 23.6971H105.695V5.9248H112.467C114.347 5.9248 115.962 6.28606 117.317 7.00856ZM116.38 19.2015C117.32 18.1981 117.788 16.7345 117.788 14.8109C117.788 12.8874 117.317 11.4238 116.38 10.4204C115.44 9.41689 114.136 8.91361 112.467 8.91361H109.172V20.7083H112.467C114.136 20.7083 115.44 20.205 116.38 19.2015Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M74.9229 16.4165C76.0636 15.9904 76.924 15.3451 77.5039 14.4775C78.0839 13.6099 78.3739 12.5539 78.3739 11.3127C78.3739 9.55892 77.7844 8.22199 76.6085 7.30497C75.4327 6.38486 73.6578 5.9248 71.2871 5.9248H64.6719V23.694H68.1515V18.831L71.7587 17.5435L75.1587 23.6909H78.9793L74.9229 16.4134V16.4165ZM68.1515 13.9526V8.91052H71.2871C72.482 8.91052 73.3519 9.09887 73.8968 9.47247C74.4417 9.84607 74.7126 10.4852 74.7126 11.3868C74.7126 11.8808 74.6297 12.4242 74.3557 12.8627C74.0147 13.403 73.4029 13.6099 72.8166 13.8198L68.1515 15.484V13.9557V13.9526Z"
+              fill="currentColor"
+            ></path>
+          </g>
+        </svg>
+      </a>
+      <ul class="header-menu">
+        <li><a href="#shop">SHOP</a></li>
+        <li><a href="#our_story">OUR STORY</a></li>
+        <li><a href="#the_science">THE SCIENCE</a></li>
+        <li><a href="#philan">PHILANTHROPY</a></li>
+        <li><a href="/html/index.html">RENAISSANCE</a></li>
+      </ul>
+      <ul class="header-user">
+        <li>
+          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="/html/cered-sign-in.html"
+            ><i class="fa fa-user" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </header>
+    <img src="https://cecred.com/cdn/shop/files/Hp_Banner_Desktop_2.jpg?v=1710538153&width=1946"alt=""/>
+    <section class="shopify" id="shop">
+      <div class="container">
+        <div class="feature_products">
+          <div class="feature_text">
+            <h2 style="margin-bottom: 20px; font-weight: 400; font-size: 20px">
+              TOP PICKS
+            </h2>
+            <p style="font-weight: 300; font-size: 14px">
+              The Foundation Collection focuses on visible hair health,
+              strength, moisture, and shine.
+            </p>
+          </div>
+          <button type="button"><a href="">SHOP NOW</a></button>
+        </div>
+
+        <div class="slider">
+          <i class="fa fa-angle-left left" aria-hidden="true" id="left"></i>
+          <ul class="wrap">
+            <li class="card">
+              <a href="" class="card_image" onmouseenter="swapImage(1)"
+              onmouseleave="resetImage(1)">
+                <img
+                  src="https://cecred.com/cdn/shop/files/20230301_KIRBY_INGREDIENTS_LA_SergiyBarchuk_DeepConditioner_000070_1.jpg?v=1701847334"
+                  alt=""
+                  draggable="false"
+                />
+                <img src="https://cecred.com/cdn/shop/files/DEEPCONDITIONERswatchtexture.jpg?v=1701979544&width=493" alt="" draggable="false" class="second_image1">
+                <button type="button" class="button1">ADD TO BAG</button>
+              </a>
+              <div class="card_content">
+                <div class="card_info">
+                  <a href="">MOISTURIZING DEEP CONDITIONER</a>
+                  <p>$38</p>
+                </div>
+                <div class="card_rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="" class="card_image" onmouseenter="swapImage(2)" onmouseleave="resetImage(2)">
+                <img
+                  src="https://cecred.com/cdn/shop/files/20230301_KIRBY_INGREDIENTS_LA_SergiyBarchuk_HydratingShampoo_000033.jpg?v=1702414035"
+                  alt=""
+                  draggable="false"
+                />
+                <img src="https://cecred.com/cdn/shop/files/HYDRATINGSHAMPOOTextureSwatch.jpg?v=1704402679&width=1946" alt="" draggable="false" class="second_image2">
+                <button type="button" class="button2">ADD TO BAG</button>
+              </a>
+              <div class="card_content">
+                <div class="card_info">
+                  <a href="">HYDRATING SHAMPOO</a>
+                  <p>$30</p>
+                </div>
+                <div class="card_rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="" class="card_image" onmouseenter="swapImage(3)" onmouseleave="resetImage(3)">
+                <img
+                  src="https://cecred.com/cdn/shop/files/20230301_KIRBY_INGREDIENTS_LA_SergiyBarchuk_HairOil_000029.jpg?v=1701847723"
+                  alt=""
+                  draggable="false"
+                />
+                <img src="https://cecred.com/cdn/shop/files/2024_Kirby_PDP_NourishingHairOil_1x1_FINAL.gif?v=1706825246" alt="" draggable="false" class="second_image3">
+                <button type="button" class="button3">ADD TO BAG</button>
+              </a>
+              <div class="card_content">
+                <div class="card_info">
+                  <a href="">NOURISHING HAIR OIL</a>
+                  <p>$44</p>
+                </div>
+                <div class="card_rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="" class="card_image" onmouseenter="swapImage(4)" onmouseleave="resetImage(4)">
+                <img
+                  src="https://cecred.com/cdn/shop/files/PDP_FERMENTED-RICE-AND-ROSE-PROTEIN-RITUAL-BUNDLE.png?v=1707086911"
+                  alt=""
+                  draggable="false"
+                />
+                <img src="https://cecred.com/cdn/shop/files/Swatch_Double_Cleanse_Kit-_600x800_ebe708d4-9e10-46e0-a027-6b94ca2f2664.jpg?v=1708137571" alt="" draggable="false" class="second_image4">
+                <button type="button" class="button4">ADD TO BAG</button>
+              </a>
+              <div class="card_content">
+                <div class="card_info">
+                  <a href="">FERMENTED RICE & ROSE PROTEIN RITUAL</a>
+                  <p>$52</p>
+                </div>
+                <div class="card_rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <a href="" class="card_image" onmouseenter="swapImage(5)" onmouseleave="resetImage(5)">
+                <img
+                  src="https://cecred.com/cdn/shop/files/Kirby_Digital_GiftCard_800x800-V2-2X.jpg?v=1708318208"
+                  alt=""
+                  draggable="false"
+                />
+                <img src="https://cecred.com/cdn/shop/files/MASTER_SWATCHES_600x800_7463bc3f-cf00-4420-8348-59f40dbcadf0.jpg?v=1708137092&width=600" alt="" draggable="false" class="second_image5">
+                <button type="button" class="button5">ADD TO BAG</button>
+              </a>
+              <div class="card_content">
+                <div class="card_info">
+                  <a href="">DIGITAL GIFT CARD</a>
+                  <p>$25</p>
+                </div>
+                <div class="card_rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <i class="fa fa-angle-right right" aria-hidden="true" id="right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="our_story">
+      <div class="story_img">
+        <img src="https://cecred.com/cdn/shop/files/Cecred_OurStory_WEB.jpg?v=1708295118&width=1946" alt="">
+      </div>
+      <h2>Cécred Beginnings</h2>
+      <div class="story_content">
+        <div class="left_content">
+          <p>I GREW UP SWEEPING HAIR IN MY MOTHER'S SALON. SO MUCH OF WHO I AM CAME FROM THERE. I SAW HOW SHE TRANSFORMED HAIR BY MIXING MAINSTREAM PRODUCTS WITH TEXTURED HAIRCARE.</p>
+        </div>
+        <div class="right_content">
+          <p>It’s been my lifelong dream to create these hair products and bring some of my mother’s teachings to life. We started by prioritizing the needs of textured hair like mine and others who lack moisture and strength. It was important to honor past rituals while infusing our personal touch by adding advanced science to build new sacred rituals. The result was haircare defined by its performance, quality, and intention. Haircare that isn’t put into the same box others have tried to put me in as a Black woman throughout my career. Haircare that will keep my hair healthy despite how often I change it up as a performer—the coloring, high-tension styles, sewing, sweat, and buildup.</p>
+          <br>
+          <p>I built Cécred from the ground up. I poured into it everything I’ve learned throughout my life so we can borrow some of our past and bring it to the future. Cécred is about prioritizing yourself and all the things you hold sacred.
+          </p>
+          <br>
+          <img src="https://cecred.com/cdn/shop/files/Heart_signature_71ca63b8-f083-4e78-91ec-13fd17d96e63.png?v=1706726984" alt="">
+        </div>
+      </div>
+      <div class="story_video">
+        <iframe src="https://www.youtube.com/embed/l4j-7I_ccaE?autoplay=1&mute=1&rel=0" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </section>
+
+    <section class="science" id="the_science">
+      <br>
+      <div class="science_intro">
+        <h2>We’re redefining keratin recovery science through the power of fermentation.</h2>
+      </div>
+      <div class="science_content">
+        <div class="img_content">
+          <img src="https://cecred.com/cdn/shop/files/20230302_KIRBY_STILLLIFE_LA_SergiyBarchuk_Group22_003429_1.jpg?v=1706800837" alt="">
+        </div>
+        <div class="text_content">
+          <h2>Our Patent-Pending Tech: Bioactive Keratin Ferment</h2>
+          <h3>THIS IS A NEW KIND OF KERATIN RECOVERY SCIENCE.</h3>
+          <div class="small_text">
+            <p>
+              Enhanced through the power of fermentation, our powerful hair repair technology closely matches and replaces depleted proteins. Its molecular weight is small enough to deeply penetrate the hair’s cortex to visibly strengthen weak, damaged, or highly manipulated hair.
+              <br>
+              Our technology is made from 3 key ingredients:
+              <br>
+              <br>
+              <strong>BIOACTIVE KERATIN</strong>
+              <br>
+              Ethically sourced natural wool protein made bioavailable for easy penetration mimics keratin in human hair and delivers a deep protein infusion.
+              <br>
+              <br>
+              <strong>HONEY</strong>
+              <br>
+              Nutrient-rich nectar that acts as a humectant, activates the fermentation, and provides essential hydration.
+              <br>
+              <br>
+              <strong>LACTOBACILLUS FERMENT</strong>
+              <br>
+              Prebiotic ferment that supports a healthy scalp.
+            </p>
+          </div>
+          <button type="button">EXPLORE CÉCRED</button>
+        </div>
+      </div>
+      <div class="science_list">
+        <div class="left_science_list">
+            <ul>
+              <li><a href="" onmouseover="changeImage('https://cecred.com/cdn/shop/files/Science_claims_3.png?v=1707063966')">RESTORES HAIR’S SHINE*</a></li>
+              <li><a href="" onmouseover="changeImage('https://cecred.com/cdn/shop/files/Science_claims_2.png?v=1707064265')">MAKES HAIR 2X MORE RESISTANT TO BREAKAGE*</a></li>
+              <li><a href="" onmouseover="changeImage('https://cecred.com/cdn/shop/files/20230609_KIRBY_GROUP_KIRA_MILAN_2093_R2.jpg?v=1701986593')">MAKES HAIR 2X SMOOTHER*</a></li>
+              <li><a href="" onmouseover="changeImage('https://cecred.com/cdn/shop/files/Science_claims_4.png?v=1707064086')">REPAIRS DAMAGE FROM CHEMICAL PROCESSING</a></li>
+              <li><a href="" style="border-bottom: 1px solid #cdcbca;" onmouseover="changeImage('https://cecred.com/cdn/shop/files/Science_claims_5.png?v=1707064187')">
+                IMPROVES HAIR’S STRUCTURAL INTEGRITY*
+                <br>
+                <br>
+                *TESTED IN A 3RD PARTY CLINICAL LABORATORY USING HAIR TRESSES
+              </a></li>
+            </ul>
+        </div>
+        <div class="right_science_list">
+          <img src="https://cecred.com/cdn/shop/files/Science_claims_3.png?v=1707063966" alt="" id="main_img">
+        </div>
+      </div>
+    </section>
+
+    <section class="philan story" id="philan">
+      <div class="philan_img story_img">
+        <img src="https://cecred.com/cdn/shop/files/Cecred_Philanthropy_Header_2.jpg?v=1708416388&width=1946" alt="">
+      </div>
+      <h2>CÉCRED x BEYGOOD FUND</h2>
+      <div class="philan_content story_content">
+        <div class="left_content">
+          <p>HAIRSTYLISTS HAVE AN IMMENSE IMPACT ON THE PEOPLE IN THEIR CHAIRS. THEY CREATE A SACRED SPACE WHERE WE CAN SHOW UP HOW WE WANT AND EXPRESS OURSELVES THROUGH OUR HAIR. THE CÉCRED X BEYGOOD FUND WAS CREATED TO GIVE BACK TO THIS AMAZING COMMUNITY.</p>
+        </div>
+        <div class="right_content">
+          <p>Fostering talent, promoting professionalism, and supporting entrepreneurship within the hair industry is deeply important to us. The Cécred x BeyGOOD Fund celebrates the influence professional stylists have on hair health and the critical importance of advocating for the salon community. An annual $500,000 will fund cosmetology school scholarships and salon business grants across five cities chosen for their large, diverse community of hair stylists: Atlanta, GA, Chicago, IL, Houston, TX, Los Angeles, CA, and Clementon, NJ</p>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="footer_container">
+          <div class="email_sms">
+              <h2>JOIN OUR CÉCRED SPACE</h2>
+              <p style="margin-top: 1rem; font-size: 14px;">Get 10% off your first purchase when you subscribe.</p>
+              <form action="" method="post">
+                  <input type="email" name="email_sms" id="email_sms" placeholder="Email Adress" required>
+                  <button type="submit">SUBMIT</button>
+              </form>
+              <p style="font-size: 12px; width: 80%; font-weight: 200;">By signing up, you agree to the terms & conditions and privacy policy. If you leave your phone number, you agree to receive marketing text messages from Cécred at the number provided. STOP to cancel. You may withdraw your consent or manage your preferences at any time by clicking the unsubscribe link at the bottom of any of our marketing emails.</p>
+          </div>
+          <div class="about">
+              <h2>ABOUT</h2>
+              <ul>
+                  <li><a href="">OUR STORY</a></li>
+                  <li><a href="">THE SCIENCE</a></li>
+                  <li><a href="">PHILANTHROPY</a></li>
+                  <li><a href="">PROFESSIONALS</a></li>
+              </ul>
+          </div>
+          <div class="help">
+              <h2>HELP</h2>
+              <ul>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">SHIPPING & RETURN</a></li>
+                  <li><a href="">CONTACT US</a></li>
+                  <li><a href="">ACCESSIBILITY</a></li>
+                  <li><a href="">YOUR PRIVACY CHOICE</a></li>
+              </ul>
+          </div>
+          <div class="social_media">
+              <h2>SOCIAL MEDIA</h2>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+      </div>
+    </footer>
+
+    <script>
+      let wrap = document.querySelector(".wrap");
+      let arrowBtns = document.querySelectorAll(".slider i");
+      let isDragging = false,
+        startX,
+        startScrollleft;
+      let firstCardWidth = wrap.querySelector(".card").offsetWidth;
+
+      const dragStart = () => {
+        isDragging = true;
+        wrap.classList.add("dragging");
+        startX = e.pageX;
+        startScrollleft = wrap.scrollLeft;
+      };
+      const dragging = (e) => {
+        if (!isDragging) return;
+        wrap.scrollLeft = startScrollleft - (e.pageX - startX);
+      };
+      const dragStop = () => {
+        isDragging = false;
+        wrap.classList.remove("dragging");
+      };
+      wrap.addEventListener("mousedown", dragStart);
+      wrap.addEventListener("mousemove", dragging);
+      document.addEventListener("mouseup", dragStop);
+
+      arrowBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          wrap.scrollLeft +=
+            btn.id === "left" ? -firstCardWidth : firstCardWidth;
+        });
+      });
+    </script>
+    <script>
+      function swapImage(index){
+        document.getElementsByClassName(`second_image${index}`)[0].style.opacity = 1;
+        document.getElementsByClassName(`button${index}`)[0].style.opacity = 1;
+      }
+      function resetImage(index){
+        document.getElementsByClassName(`second_image${index}`)[0].style.opacity = 0;
+        document.getElementsByClassName(`button${index}`)[0].style.opacity = 0;
+      }
+    </script>
+    <script>
+      function changeImage(image){
+        document.getElementById('main_img').src = image;
+      }
+    </script>
+  </body>
+</html>
